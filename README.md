@@ -1,4 +1,4 @@
-Diagrama DER
+Diagrama
 ```mermaid
 erDiagram
     usuarios ||--|| escolas : "gerencia (admin_id)"

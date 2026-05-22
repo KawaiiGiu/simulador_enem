@@ -72,3 +72,4 @@ CREATE POLICY aluno_acesso_proprio ON matriculas
 CREATE POLICY admin_acesso_escola ON matriculas
     FOR SELECT TO admin_escolar
     USING (escola_id IN (SELECT id FROM escolas WHERE admin_id = current_user_id()));
+    
